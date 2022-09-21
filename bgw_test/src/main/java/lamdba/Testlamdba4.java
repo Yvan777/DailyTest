@@ -1,6 +1,6 @@
 package lamdba;
 
-import com.google.common.collect.Lists;
+import com.beust.jcommander.internal.Lists;
 import org.junit.Test;
 
 import java.util.ArrayList;
