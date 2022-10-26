@@ -14,4 +14,9 @@ public class ConcreteStrategyMultiply implements Strategy {
     public int execute(int a, int b) {
         return a * b;
     }
+
+    @Override
+    public void syout() {
+        System.out.println("mul");
+    }
 }

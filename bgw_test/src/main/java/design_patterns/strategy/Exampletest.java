@@ -16,12 +16,17 @@ public class Exampletest {
     @Autowired
     private ContextFactory contextFactory;
 
+    //策略模式加工厂模式
     @GetMapping("/test2")
     public void test() {
         Strategy subtraction = contextFactory.getStrategy("concreteStrategyAdd");
-        int a = 1;
-        int b = 2;
-        int i = subtraction.execute(a, b);
+        int i = subtraction.execute(1, 13);
         System.out.println(i);
+    }
+
+    //纯策略模式
+    @GetMapping("/test22")
+    public void test22() {
+        new Context(11,12,new ConcreteStrategyAdd());
     }
 }
