@@ -11,14 +11,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>bgw_test</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>zkConsumer</module>
+        <module>zkProducer</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <spring-cloud.version>Finchley.SR2</spring-cloud.version>
+        <zookeeper.version>3.8.0</zookeeper.version>
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

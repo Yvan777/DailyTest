@@ -1,4 +1,4 @@
-package lamdba;
+package java8.lamdba;
 
 /**
  * @Description

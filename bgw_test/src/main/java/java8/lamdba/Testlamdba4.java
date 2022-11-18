@@ -1,4 +1,4 @@
-package lamdba;
+package java8.lamdba;
 
 import com.beust.jcommander.internal.Lists;
 import org.junit.Test;
@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static lamdba.Testlamdba2.useFlyable;
-import static lamdba.Testlamdba3.useAddable;
+import static java8.lamdba.Testlamdba2.useFlyable;
+import static java8.lamdba.Testlamdba3.useAddable;
 
 /**
  * @Description

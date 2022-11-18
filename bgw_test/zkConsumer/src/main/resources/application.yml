@@ -1,8 +1,8 @@
 spring:
   application:
-    name: TESTPR
+    name: TESTCO
   cloud:
     zookeeper:
       connect-string: 127.0.0.1:2181
       discovery:
-        enabled: true
+        enabled: false

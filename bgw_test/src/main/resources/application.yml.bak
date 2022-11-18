@@ -1,0 +1,33 @@
+server:
+  port: 8098
+  datasource:
+    tomcatDbSwitch: false
+    jndiName: java:comp/env/jdbc/mobiledb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/scc_uat?useUnicode=true&characterEncoding=UTF-8&connectTimeout=10000&socketTimeout=300000
+    username: root
+    password: root
+    initialize: true
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 20
+    minIdle: 5
+    maxActive: 60
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 300000
+    minEvictableIdleTimeMillis: 600000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+spring:
+  application:
+    name: feignTestPr
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181
+      discovery:
+        enabled: true
